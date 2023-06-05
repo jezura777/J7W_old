@@ -29,24 +29,25 @@
         
 </script>
 
-<header class="box-border font-mono m-0 w-screen z-10 absolute flex flex-col justify-center items-center select-none">
-    <nav id="nav" class="flex flex-col border-[#007d54] border-solid border-b-2 border-x-2 bg-slate-700/50 shadow-lg shadow-slate-800 drop-shadow-2xl rounded-b-3xl md:-translate-y-[8.5em] -translate-y-[6em] hover:-translate-y-[6em] cursor-pointer transition duration-500 backdrop-blur-lg text-right text-2xl text-[#007d54] font-extrabold gap-5 pt-5" >
-        <div class="flex flex-row gap-10 ">
-            <div class="flex flex-col text-left">
-                <a href="/" class="pr-auto pl-[1.65rem] bg-clip-text text-transparent bg-gradient-to-br from-purple-600 via-pink-600 to-yellow-600 cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
-                <a href="/about" class="pr-auto pl-6 bg-clip-text text-transparent bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-800 cursor-pointer"><i class="fa-brands fa-discord fa-sm"></i></a>
-                <a href="/projects" class="pr-auto pl-[1.65rem] bg-clip-text text-transparent bg-gradient-to-br from-red-600 via-rose-600 to-pink-800 cursor-pointer"><i class="fa-brands fa-youtube fa-sm"></i></a>
-            </div>
+<header class="box-border font-mono m-0 w-screen z-10 absolute flex flex-row  select-none">
 
+    <div class="flex flex-col border-[#007d54] border-solid border-b-2 border-r-2 bg-slate-700/50 shadow-lg shadow-slate-800 drop-shadow-2xl rounded-br-3xl backdrop-blur-lg text-2xl gap-2 p-4">
+        <a href="https://www.instagram.com/jezura777/" target="_blank" class="p-[0.15em] bg-clip-text text-transparent bg-gradient-to-br from-purple-600 via-pink-600 to-yellow-600 cursor-pointer"><i class="fa-brands fa-instagram cursor-pointer"></i></a>
+        <a class="bg-clip-text text-transparent bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-800 cursor-pointer"><i class="fa-brands fa-discord fa-sm cursor-pointer"></i></a>
+        <a href="https://www.youtube.com/@jezura777/" target="_blank" class="p-[0.10em] bg-clip-text text-transparent bg-gradient-to-br from-red-600 via-rose-600 to-pink-800 cursor-pointer"><i class="fa-brands fa-youtube fa-sm cursor-pointer"></i></a>
+    </div>
+
+    <div class="flex flex-row justify-center w-screen items-center absolute -z-10">
+        <nav id="nav" class="flex flex-col border-[#007d54] border-solid  border-b-2 border-x-2 bg-slate-700/50 shadow-lg shadow-slate-800 drop-shadow-2xl rounded-b-3xl md:-translate-y-[8.5em] -translate-y-[6em] hover:-translate-y-[6em] cursor-pointer transition duration-500 backdrop-blur-lg text-right text-2xl text-[#007d54] font-extrabold gap-5 pt-5">
             <div class="flex flex-col">
-                <a href="/" class="pl-auto pr-6 cursor-pointer">Home <i class="fa-solid fa-house fa-sm"></i></a>
-                <a href="/about" class="pl-auto pr-6 cursor-pointer">About <i class="fa-solid fa-folder fa-sm"></i></a>
-                <a href="/projects" class="pl-auto pr-6 cursor-pointer">Projects <i class="fa-solid fa-rocket fa-sm"></i></a>
+                <a href="/" class="cursor-pointer pr-6">Home <i class="fa-solid fa-house fa-sm"></i></a>
+                <a href="/about" class="cursor-pointer pr-6">About <i class="fa-solid fa-folder fa-sm"></i></a>
+                <a href="/projects" class=" cursor-pointer pr-6">Projects <i class="fa-solid fa-rocket fa-sm"></i></a>
             </div>
-        </div>
 
-        <div class="flex flex-col justify-center items-center">
-            <img src="/fullLogo.svg" alt="logo" class="w-60 p-6">
-        </div>
-    </nav>
+            <div class="flex flex-col justify-center items-center">
+                <img src="/fullLogo.svg" alt="logo" class="w-60 p-6">
+            </div>
+        </nav>
+    </div>
 </header>
