@@ -1,0 +1,25 @@
+<svg version="1.1" x="0" y="0" xml:space="preserve" id="prefix__prefix__prefix__svg24" width="512" height="512"
+   xmlns="http://www.w3.org/2000/svg">
+   <style type="text/css" id="style2">
+      .prefix__prefix__prefix__st0 {
+         fill: #007d54
+      }
+   </style>
+   <g id="prefix__prefix__prefix__Layer_1" transform="matrix(.99825 0 0 .99854 -37.811 -153.587)">
+      <g id="prefix__prefix__prefix__g11">
+         <path class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect7"
+            d="M310.64 278.994h163v38h-163z" />
+         <path transform="rotate(-90)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect9"
+            d="M-561.006 435.633h236v38h-236z" />
+      </g>
+      <g id="prefix__prefix__prefix__g21">
+         <path class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect13" d="M108 278.994h163v38H108z" />
+         <path transform="rotate(-90)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect15"
+            d="M-524.006 232.995h199v38h-199z" />
+         <path transform="rotate(135)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect17"
+            stroke-width=".985" d="M178.454-561.989h53.08v37.429h-53.08z" />
+         <path transform="scale(-1)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect19"
+            stroke-width=".996" d="M-233.6-561.406h124v38h-124z" />
+      </g>
+   </g>
+</svg>

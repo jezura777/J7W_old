@@ -1,0 +1,15 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro"
+---
+
+<Base title="404: Not found!">
+    <Header client:load />
+    <main class="box-border bg-slate-800 font-mono m-0 flex flex-col justify-center items-center w-screen h-screen">
+
+        <img src="/logo.svg" alt="logo" class="aspect-square">
+
+        <h1 class="text-xl text-slate-300"><span class="text-[#007d54]">404: </span> Not Found</h1>
+
+    </main>
+</Base>

@@ -1,0 +1,26 @@
+<svg class="prefix__astro" viewBox="0 0 256 256" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg">
+   <defs>
+      <linearGradient id="prefix__a">
+         <stop offset="0" stop-color="#fa5c00" />
+         <stop offset=".891" stop-color="#dac300" />
+      </linearGradient>
+      <linearGradient xlink:href="#prefix__a" id="prefix__b" x1="127.027" y1="13.32" x2="129.316" y2="173.26"
+         gradientUnits="userSpaceOnUse" gradientTransform="translate(1.257 16.957)" />
+      <linearGradient xlink:href="#prefix__a" id="prefix__c" gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(1.5545 0 0 1.61034 -55.258 -67.265)" x1="127.027" y1="13.32" x2="129.316"
+         y2="173.26" />
+      <linearGradient xlink:href="#prefix__a" id="prefix__d" gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(-1.5545 0 0 1.61034 313.957 -67.832)" x1="127.027" y1="13.32" x2="129.316"
+         y2="173.26" />
+   </defs>
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M164.265 35.886c1.944 2.413 2.935 5.67 4.917 12.181l43.31 142.27a180.277 180.277 0 00-51.779-17.53l-28.198-95.29a3.67 3.67 0 00-7.042.01L97.616 172.76a180.225 180.225 0 00-52.01 17.557l43.52-142.28c1.99-6.503 2.983-9.753 4.927-12.16a15.999 15.999 0 016.484-4.799c2.872-1.154 6.271-1.154 13.07-1.154h31.085c6.807 0 10.211 0 13.086 1.157a16.004 16.004 0 016.487 4.806z"
+      fill="url(#prefix__b)" />
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M94.531 183.629c-28.185 5.092-55.45 14.627-80.849 28.273 30.773 7.606 67.62-25.775 80.85-28.273z"
+      fill="url(#prefix__c)" />
+   <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M164.168 183.062c28.185 5.092 55.45 14.627 80.849 28.273-30.773 7.606-67.62-25.775-80.85-28.273z"
+      fill="url(#prefix__d)" />
+</svg>
