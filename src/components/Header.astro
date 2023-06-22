@@ -1,51 +1,14 @@
 ---
+import Nav from "./Nav.astro";
 import SocialMedia from "./SocialMedia.astro";
+import Settings from "./Settings.astro"
 ---
-
-<script>
-
-    var clicked = false;
-
-    function handleOut () {
-        if (clicked) {
-            clicked = false;
-            document.getElementById("nav").style.cssText = null;
-        }
-    }
-
-    function handleClick () {
-        if (clicked) {
-            document.getElementById("nav").style.cssText = null;
-            clicked = false;
-        } else {
-            document.getElementById("nav").style.cssText = "transform: translateY(0em); cursor: default;";
-            clicked = true;
-        }
-    }
-
-    document.getElementById("nav").addEventListener("click", handleClick);
-    document.getElementById("nav").addEventListener("mouseleave", handleOut);
-        
-</script>
 
 <header class="box-border font-mono m-0 w-screen z-10 absolute flex flex-row  select-none">
 
     <SocialMedia />
 
-    <div class="flex flex-row justify-center w-screen items-center absolute -z-10">
-        <nav id="nav" class="flex flex-col border-[#00b65f] border-solid  border-b-2 border-x-2 bg-slate-700/50 shadow-lg shadow-slate-800 drop-shadow-2xl rounded-b-3xl md:-translate-y-[8.5em] -translate-y-[6em] hover:-translate-y-[6em] cursor-pointer transition duration-500 backdrop-blur-lg text-right text-2xl text-[#00b65f] font-extrabold gap-5 pt-5">
-            <div class="flex flex-col">
-                <a href="/" class="transition-all duration-300 cursor-pointer pr-6 bg-clip-text hover:text-transparent bg-gradient-to-br from-violet-600 to-red-600">Home <span class="bg-clip-text text-transparent bg-gradient-to-br from-violet-600 to-red-600"><i class="fa-solid fa-house fa-sm"></i></span></a>
-                <a href="/about" class="transition-all duration-300 cursor-pointer pr-6 bg-clip-text hover:text-transparent bg-gradient-to-br from-amber-600 to-yellow-600">About <span class="bg-clip-text text-transparent bg-gradient-to-br from-amber-600 to-yellow-600"><i class="fa-solid fa-folder fa-sm"></i></span></a>
-                <a href="/projects" class="transition-all duration-300 cursor-pointer pr-6 bg-clip-text hover:text-transparent bg-gradient-to-br from-cyan-600 to-blue-600">Projects <span class="bg-clip-text text-transparent bg-gradient-to-br from-cyan-600 to-blue-600"><i class="fa-solid fa-rocket fa-sm"></i></span></a>
-            </div>
+    <Nav />
 
-            <div class="flex flex-col justify-center items-center">
-                <img src="/fullLogo.svg" alt="logo" class="w-60 p-6">
-            </div>
-        </nav>
-    </div>
-
-    
 
 </header>
