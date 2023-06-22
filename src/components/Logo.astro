@@ -80,9 +80,10 @@ const { text } = Astro.props;
 
     document.addEventListener("click", () => {
         if (document.getElementById("text").textContent == "Jezura777") {
-            document.getElementById("text").style.cssText = "color: transparent;"
+            document.getElementById("text").style.cssText = "color: transparent;";
+            // alert("You have sharp eyes!");
         } else {
-            document.getElementById("text").style.cssText = "color: rgb(203 213 225);"
+            document.getElementById("text").style.cssText = "color: rgb(203 213 225);";
         }
     })
 </script>
