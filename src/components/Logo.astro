@@ -5,9 +5,9 @@ export interface Props {
 
 const { text } = Astro.props;
 ---
-<div id="ddd" class="flex flex-col justify-center items-center bg-slate-900">
+<div id="ddd" class="flex flex-col justify-center items-center bg-slate-900 ">
     <img src="./logo.png" alt="">
-    <h1 contenteditable class="text-xl text-slate-300"><span class="text-[#007d54]">404: </span> Not Found</h1>
+    <h1 contenteditable id="text" class="text-xl text-slate-300 bg-clip-text bg-gradient-to-br from-[#007d54] via-[#108d64] to-[#00b65f]"><span class="text-[#007d54]">404: </span> Not Found</h1>
 </div>
 
 <style>
@@ -51,6 +51,8 @@ const { text } = Astro.props;
         filter: blur(15px);
         opacity: 0.5;
     }
+
+
 </style>
 
 <script>
@@ -75,4 +77,12 @@ const { text } = Astro.props;
         document.getElementById("ddd").style.setProperty("--rotateX", offsetY + "deg");
         document.getElementById("ddd").style.setProperty("--rotateY", offsetX + "deg");
     }
+
+    document.addEventListener("click", () => {
+        if (document.getElementById("text").textContent == "Jezura777") {
+            document.getElementById("text").style.cssText = "color: transparent;"
+        } else {
+            document.getElementById("text").style.cssText = "color: rgb(203 213 225);"
+        }
+    })
 </script>
