@@ -1,13 +1,40 @@
 ---
 import Base from '../layouts/Base.astro';
 import Header from "../components/Header.astro"
-import Logo from "../components/Logo.astro"
+import Menu from "../components/Menu.astro"
+import Welcome from "../components/Welcome.astro"
+
 ---
 
 <Base title="J7">
+	
 	<Header/>
 
-	<main class="grid place-items-center h-screen">
-		
+	<main class="grid content-center justify-center w-screen  min-h-screen relative">
+
+		<div id="Welcome" class="absolute self-center justify-self-center"><Welcome /></div>
+		<div id="Menu" class="opacity-0 absolute self-center justify-self-center"><Menu /></div>
+
 	</main>
 </Base>
+
+<style>
+
+</style>
+
+<script>
+	var pressedEnter = false;
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13 && !pressedEnter) {
+        pressedEnter = true;
+
+		document.getElementById("Welcome").style.opacity = "0";
+		document.getElementById("Welcome").style.scale = "0";
+
+		document.getElementById("Menu").style.opacity = "1";
+
+
+
+    }
+});
+</script>

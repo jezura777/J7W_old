@@ -2,7 +2,8 @@
    xmlns="http://www.w3.org/2000/svg">
    <style type="text/css" id="style2">
       .prefix__prefix__prefix__st0 {
-         fill: #00b65f
+         /* fill: #00b65f */
+         fill: #007d54
       }
    </style>
    <g id="prefix__prefix__prefix__Layer_1" transform="matrix(.99825 0 0 .99854 -37.811 -153.587)">
