@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
@@ -8,19 +8,70 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content={Astro.generator} />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
 
-    <script src="https://kit.fontawesome.com/510df23e47.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/510df23e47.js"
+            crossorigin="anonymous"></script>
 
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
-    <title>{title}</title>
-</head>
-<body class="box-border bg-slate-800 font-mono m-0 w-screen h-screen z-0 select-none">
-    <slot />
-</body>
+        <title>{title}</title>
+    </head>
+    <body
+        class="box-border bg-slate-800 font-mono m-0 w-screen min-h-screen z-0 select-none relative background-gradients"
+    >
+        <slot />
+    </body>
 </html>
+
+<style>
+
+    @media (min-width: 768px) {
+        .background-gradients{
+            --crosses-on-the-screen: 6.4 !important;
+        }
+    }
+
+    .background-gradients {
+        --crosses-on-the-screen: 3.2;
+        --x-offset: 2.9vw;
+        --y-offset: 2.9vw;
+        --line-weight: 0.25rem;
+        --size: calc(100vw / var(--crosses-on-the-screen));
+
+        background-image: radial-gradient(
+                circle,
+                transparent 0.75rem,
+                #1e293b 0.75rem
+            ),
+            linear-gradient(
+                #00b65fa0 var(--line-weight),
+                transparent var(--line-weight)
+            ),
+            linear-gradient(
+                90deg,
+                #00b65fa0 var(--line-weight),
+                transparent var(--line-weight)
+            );
+
+            background-blend-mode: normal, exclusion;
+
+        background-size: var(--size) var(--size);
+        background-position: calc(
+                    calc(calc(var(--size) / 2) + calc(var(--line-weight) / 2)) +
+                        var(--x-offset)
+                )
+                calc(
+                    calc(calc(var(--size) / 2) + calc(var(--line-weight) / 2)) +
+                        var(--y-offset)
+                ),
+            var(--x-offset) var(--y-offset), var(--x-offset) var(--y-offset);
+
+        
+    }
+</style>
