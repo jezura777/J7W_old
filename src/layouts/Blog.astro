@@ -1,0 +1,42 @@
+---
+import Base from "./Base.astro";
+import Header from "../components/Header.astro"
+
+
+const { frontmatter } = Astro.props;
+---
+
+<Base title={frontmatter.title} color='#d97706a0'>
+	
+	<Header/>
+
+	<main class="grid content-center justify-center w-screen  min-h-screen relative">
+
+		<div id="Welcome" class="absolute self-center justify-self-center">
+			<div class="flex flex-col border-[#d97706] text-[#d97706] border-solid border-2 shadow-xl rounded-3xl backdrop-blur-sm text-2xl gap-5 p-10 mt-20 min-h-min w-custom text-[#00b65f] font-semibold">
+				<div class="container flex flex-col content-center justify-center">
+					<h1 class="font-extrabold text-3xl whitespace-nowrap mb-8">{frontmatter.title}</h1>
+
+					<div class="flex flex-row justify-between text-sm text-[#00b65f]">
+						<p>{frontmatter.author}</p>
+						<p>{frontmatter.pubDate.slice(0, 10)}</p>
+					</div>
+					<div class="h-px w-auto bg-[#00b65f] -mx-3"></div>
+
+					<div class="flex flex-col justify-between pt-10 text-[#d97706]">
+						<slot/>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</main>
+</Base>
+
+<style>
+	.w-custom {
+		width:  calc(100vw - 7em);
+	}
+
+</style>
