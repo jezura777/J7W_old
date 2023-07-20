@@ -12,4 +12,4 @@ Sem budu dávat příspěvky o mně, moje vtíravé filosofické myšlenky, nebo
 <!--  -->
  
 <!--  -->
-                                Bude mi potěšením J7
+                                Bude mi potěšením J7.
