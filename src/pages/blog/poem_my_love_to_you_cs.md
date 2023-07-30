@@ -5,35 +5,33 @@ date: 2023-07-30
 author: 'Jezura777'
 ---
 Něco bych napsal na úvod, ale nic moc mě nenapadá, tak jdu rovnou na věc
-  
+<br/><br/><br/>  
 <!-- ^ tu je whitespaca kdyz chces aby si mel dalsi radek okopci ok tak prej br funkcionuje tez -->
 
-Na piedestal mnou postavená,
-Asi však velice zrádná,
-Za určitých okolností záhadná,
-Trápí mě myšlenka matná.
-
-Kdysi si tě mé srdce vybralo,
-Bude tomu již pár let,
-"Dej ji vše" řeklo,
-"Dej ji celý svůj svět."
-
-Každou vteřinu od té doby,
-Trávím sněním jaké by bylo,
-Najít něco coby mě rádoby,
-V lepšího partnera změnilo.
-
-Zasadit semínko lásky,
-V květináči ti ho dát,
-Dívat se jak roste, jak se z něj stává strom a přitom vískat tvoje vlásky,
-Nemuset se o tebe furt s někým prát.
-
-Rád bych měl tvoji duši za tu moji,
-Čekal jsem na správný moment, kdy tě vyhrát,
-Avšak čekal jsem moc dlouho, že nás štěstí spojí,
-A ty teď buď nechceš, nebo nemůžeš se moji vyvolenou stát.
-
-----------------------------------------------------------
+Na piedestal mnou postavená,<br/>
+Asi však velice zrádná,<br/>
+Za určitých okolností záhadná,<br/>
+Trápí mě myšlenka matná.<br/>
+<br/>
+Kdysi si tě mé srdce vybralo,<br/>
+Bude tomu již pár let,<br/>
+"Dej ji vše" řeklo,<br/>
+"Dej ji celý svůj svět."<br/>
+<br/>
+Každou vteřinu od té doby,<br/>
+Trávím sněním jaké by bylo,<br/>
+Najít něco coby mě rádoby,<br/>
+V lepšího partnera změnilo.<br/>
+<br/>
+Zasadit semínko lásky,<br/>
+V květináči ti ho dát,<br/>
+Dívat se jak roste, jak se z něj stává strom a přitom vískat tvoje vlásky,<br/>
+Nemuset se o tebe furt s někým prát.<br/>
+<br/>
+Rád bych měl tvoji duši za tu moji,<br/>
+Čekal jsem na správný moment, kdy tě vyhrát,<br/>
+Avšak čekal jsem moc dlouho, že nás štěstí spojí,<br/>
+A ty teď buď nechceš, nebo nemůžeš se moji vyvolenou stát.<br/>
 
 Avšak moje srdce pořád má své tužby,<br/>
 Po tvojí přítomnosti srdceryvně úpí,<br/>
