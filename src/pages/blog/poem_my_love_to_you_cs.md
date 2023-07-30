@@ -4,7 +4,7 @@ title:  'Druhá básnička: Moje láska k tobě'
 date: 2023-07-30
 author: 'Jezura777'
 ---
-Něco bych napsal na úvod, ale nic moc mě nenapadá, tak jdu rovnou na věc
+Něco bych napsal na úvod, ale nic moc mě nenapadá, tak jdu rovnou na věc.
 <br/><br/><br/>  
 <!-- ^ tu je whitespaca kdyz chces aby si mel dalsi radek okopci ok tak prej br funkcionuje tez -->
 
