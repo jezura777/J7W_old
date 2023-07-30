@@ -32,7 +32,7 @@ Rád bych měl tvoji duši za tu moji,<br/>
 Čekal jsem na správný moment, kdy tě vyhrát,<br/>
 Avšak čekal jsem moc dlouho, že nás štěstí spojí,<br/>
 A ty teď buď nechceš, nebo nemůžeš se moji vyvolenou stát.<br/>
-
+<br/>
 Avšak moje srdce pořád má své tužby,<br/>
 Po tvojí přítomnosti srdceryvně úpí,<br/>
 A tímto prohřeškem dopustilo se vraždy,<br/>
