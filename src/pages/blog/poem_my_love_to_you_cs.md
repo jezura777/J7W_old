@@ -2,6 +2,7 @@
 layout: '../../layouts/Blog.astro'
 title:  'Druhá básnička: Moje láska k tobě'
 date: 2023-07-30
+lang: 'cz'
 author: 'Jezura777'
 ---
 Něco bych napsal na úvod, ale nic moc mě nenapadá, tak jdu rovnou na věc.
