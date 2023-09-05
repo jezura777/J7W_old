@@ -1,4 +1,7 @@
 ---
+import Header from "../components/Header.astro";
+import SocialMediaMobile from "../components/SocialMediaMobile.astro";
+
 export interface Props {
     title: string;
     color: string;
@@ -24,7 +27,11 @@ const { title, color = "#00b65fa0" } = Astro.props;
         <title>{title}</title>
     </head>
     <body class="box-border bg-slate-800 font-mono m-0 w-screen min-h-screen z-0 select-none relative background-gradients">
+        <Header/>
+
         <slot />
+
+        <SocialMediaMobile/>
     </body>
 </html>
 

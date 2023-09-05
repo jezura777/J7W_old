@@ -1,14 +1,11 @@
 ---
 import Base from "./Base.astro";
-import Header from "../components/Header.astro"
 
 
 const { frontmatter } = Astro.props;
 ---
 
 <Base title={frontmatter.title} color='#d97706a0'>
-	
-	<Header/>
 
 	<main class="grid content-center justify-center w-screen  min-h-screen relative">
 
@@ -23,7 +20,7 @@ const { frontmatter } = Astro.props;
 					</div>
 					<div class="h-px w-auto bg-[#00b65f] -mx-3"></div>
 
-					<div class="flex flex-col justify-between py-10 text-[#d97706] text-lg font-normal">
+					<div class="flex flex-col justify-between py-10 text-[#d97706] font-normal">
 						<slot/>
 					</div>
 					
@@ -38,5 +35,6 @@ const { frontmatter } = Astro.props;
 	.w-custom {
 		width:  calc(100vw - 7em);
 	}
+
 
 </style>
