@@ -2,8 +2,9 @@
 layout: '../../layouts/Blog.astro'
 title: 'Čas jsou peníze'
 date: 2023-08-03
-lang: 'cz'
+lang: 'cs'
 author: 'Jezura777'
+poem: false
 ---
 
 # Čas nejsou peníze<br/>

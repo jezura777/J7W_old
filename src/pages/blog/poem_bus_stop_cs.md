@@ -2,8 +2,9 @@
 layout: '../../layouts/Blog.astro'
 title: 'První básnička: Zastávka'
 date: 2023-07-20
-lang: 'cz'
+lang: 'cs'
 author: 'Jezura777'
+poem: true
 ---
 # Tohle je první básnička tady.
   
