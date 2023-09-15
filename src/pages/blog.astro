@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 
-
 const posts = await Astro.glob("./blog/*.md");
 const postsSorted = posts.sort((post) => post.frontmatter.date);
 const postClass = ' relative border-2 w-full border-[#d97706] text-[#d97706] rounded-3xl backdrop-blur-sm gap-5 p-10 none'
@@ -23,6 +22,9 @@ const postClass = ' relative border-2 w-full border-[#d97706] text-[#d97706] rou
 </Base>
 
 <style>
+
+   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap');
+
 	.parent {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -33,17 +35,20 @@ const postClass = ' relative border-2 w-full border-[#d97706] text-[#d97706] rou
 	}
 
 	@media (min-width: 768px) {
-    .parent {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+		.parent {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
 
-	.parent-post {
-		display: grid;
-		grid-template-rows: repeat(3, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
+		.parent-post {
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+		}
+
+
+
 	}
-}
 </style>
 
 
