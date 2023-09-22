@@ -3,18 +3,18 @@ import Base from '../layouts/Base.astro';
 
 const posts = await Astro.glob("./blog/*.md");
 const postsSorted = posts.sort((post) => post.frontmatter.date);
-const postClass = ' relative border-2 w-full border-[#d97706] text-[#d97706] rounded-3xl backdrop-blur-sm gap-5 p-10 none'
+const postClass = ' post backdrop-blur-sm shadow-lg'
 
 ---
 
 
 
-<Base title="J7-Blog" color='#d97706a0'>
+<Base title="J7-Blog" color='#d97706'>
 
-	<main class="parent gap-5 items-center justify-center w-screen  min-h-screen relative px-5 my-16 ">
+	<main class="parent">
 		{postsSorted.map((post) => <a href={post.url} class={post.frontmatter.lang+postClass}>
 
-			<h1 class="h-20">{post.frontmatter.title}</h1>
+			<h1 class="text-xl text-[#d97706]">{post.frontmatter.title}</h1>
 		
 		</a>)}
 
@@ -22,68 +22,45 @@ const postClass = ' relative border-2 w-full border-[#d97706] text-[#d97706] rou
 </Base>
 
 <style>
+   	* {
+		display: block;
+		padding: 0;
+		margin: 0;
+   	}
 
-   @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap');
+	.post {
+		border-width: 2px;
+		border-color: #d97706;
+		border-radius: 1.5rem;
+		padding: 1.75rem;
+		margin: 0 0.2em 0 0.2rem;
+		transition: all 500ms ease-in-out;
+	}
+
+	.post:hover{
+		box-shadow: 0px 0px 0.1rem #d97706,
+				0px 0px 0.2rem #d97706,
+				0px 0px 0.4rem #d97706,
+				0px 0px 0.8rem #d97706;
+	}
 
 	.parent {
+		margin: 3.75rem 0 3.75rem 0;
+		width: auto;
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(1, minmax(20rem, 1fr));
+		align-items: space-evenly;
+		gap: 2em;
 	}
 
-	.none {
-		display: none;
-	}
 
 	@media (min-width: 768px) {
 		.parent {
-			grid-template-columns: 1fr 1fr 1fr;
+			padding: 0 5rem;
+			grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 		}
-
-		.parent-post {
-			display: grid;
-			grid-template-rows: repeat(3, 1fr);
-			grid-column-gap: 0px;
-			grid-row-gap: 0px;
-		}
-
-
-
 	}
+
 </style>
 
-
-<script>
-
-	function getCookie(cookieName) {
-		let cookies = document.cookie.split("; ");
-		for (let i = 0; i < cookies.length; i++) {
-			let cookie = cookies[i].split("=");
-			let name = cookie[0];
-			let value = cookie[1];
-			if (name === name) {
-				return decodeURIComponent(value);
-			}
-			
-		}
-	}
-
-
-
-
-	setInterval(() => {	
-		if (!(document.cookie.includes("lang"))) {
-			if (navigator.language == "cs" || navigator.language == "sk") {
-				let expire = new Date();
-				expire.setDate(expire.getDate() + 7);
-				document.cookie = "lang=cs; expires=" + "; path=/"
-			} else {
-				let expire = new Date();
-				expire.setDate(expire.getDate() + 7);
-				document.cookie = "lang=en; expires=" + "; path=/"
-			}
-		}
-
-	document.querySelectorAll("." + getCookie("lang")).forEach((e) => {
-  		e.style.display = "block";
-	})}, 500);
-</script>
+<!-- eventualy add likes in heart shape and animations like when you like the whole article turns red for a moment -->

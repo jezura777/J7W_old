@@ -2,12 +2,19 @@
 import Nav from "./Nav.astro";
 import SocialMedia from "./SocialMedia.astro";
 import Settings from "./Settings.astro"
+
+export interface Props {
+    color: string;
+}
+
+const { color = "#00b65fa0" } = Astro.props;
+
 ---
 
 <header class="box-border font-mono m-0 w-screen z-10 fixed flex flex-row select-none top-0 pointer-events-none">
 
-    <SocialMedia />
+    <SocialMedia color={color}/>
 
-    <Nav />
+    <Nav color={color}/>
 
 </header>

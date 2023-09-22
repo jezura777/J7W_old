@@ -11,22 +11,22 @@ const { frontmatter } = Astro.props;
 	});
 </script>
 
-<Base title={frontmatter.title} color='#d97706a0'>
+<Base title={frontmatter.title} color='#d97706'>
 
-	<main class="grid content-center justify-center w-screen  min-h-screen relative">
+	<main class="">
 
-		<div class="absolute justify-self-center">
-			<div class="flex flex-col border-[#d97706] text-[#d97706] border-solid border-2 shadow-xl rounded-3xl backdrop-blur-sm gap-5 p-10 m-20 min-h-min w-custom">
-				<div class="container flex flex-col content-center justify-center" id={frontmatter.poem}>
-					<h1 class="font-extrabold whitespace-nowrap mb-8">{frontmatter.title}</h1>
+		<div class="main backdrop-blur-sm">
+			<div class="">
+				<div class="" id={frontmatter.poem}>
+					<h1 class="">{frontmatter.title}</h1>
 
-					<div class="flex flex-row justify-between text-sm text-[#00b65f]">
-						<p>{frontmatter.author}</p>
-						<p>{frontmatter.date.slice(0, 10)}</p>
+					<div class="flex flex-row mx-3 3.75rem 0.2rem 3.75rem 0.2rem justify-between text-[#00b65f]">
+						<p class="">{frontmatter.author}</p>
+						<p class="">{frontmatter.date.slice(0, 10)}</p>
 					</div>
-					<div class="h-px w-auto bg-[#00b65f] -mx-3"></div>
+					<div class="bg-[#00b65f] w-full h-[2px]"></div>
 
-					<div class="flex flex-col justify-between py-10 text-[#d97706]">
+					<div class="mt-6">
 						<slot />
 					</div>
 					
@@ -38,7 +38,30 @@ const { frontmatter } = Astro.props;
 </Base>
 
 <style>
-	.w-custom {
-		width:  calc(100vw - 7em);
+   	* {
+		display: block;
+		padding: 0;
+		margin: 0;
+   	}
+
+	.main {
+		margin: 3.75rem 0.2rem 3.75rem 0.2rem;
+		border-width: 2px;
+		border-color: #d97706;
+		color: #d97706;
+		border-radius: 1.5rem;
+		padding: 1.75rem;
+		transition: all 500ms ease-in-out;
+	}
+
+	h1 {
+		font-weight: 900;
+		font-size: larger;
+	}
+
+	@media (min-width: 768px) {
+		.main {
+			margin: 3.75rem 5rem 3.75rem 5rem;
+		}
 	}
 </style>

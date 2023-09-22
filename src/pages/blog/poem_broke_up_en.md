@@ -25,4 +25,4 @@ Hope it is english correct in some way, because I showed it to my english friend
 opinion but when he has finished with it, it didn't felt like mine so I implemented just some of his ideas.
 
 
-        Nice day Jezura7777.
+                                Doufám že se líbila, J7.
