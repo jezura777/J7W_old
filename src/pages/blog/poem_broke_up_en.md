@@ -25,4 +25,4 @@ Hope it is english correct in some way, because I showed it to my english friend
 opinion but when he has finished with it, it didn't felt like mine so I implemented just some of his ideas.
 
 
-                                Doufám že se líbila, J7.
+                                Hope you enjoied it, J7.
