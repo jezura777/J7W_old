@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import Header from "../components/Header.astro";
 import SocialMediaMobile from "../components/SocialMediaMobile.astro";
 
@@ -25,9 +26,10 @@ const { title, color = "#00b65f" } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
         <title>{title}</title>
+        <ViewTransitions />
     </head>
     <body class="box-border bg-slate-800 font-mono m-0 w-screen min-h-screen z-0 select-none relative background-gradients">
-        <Header color={color}/>
+        <Header color={color} transition:persist/>
 
         <slot />
 
