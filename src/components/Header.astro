@@ -1,13 +1,14 @@
 ---
 import Nav from "./Nav.astro";
+import NavMobile from "./NavMobile.astro";
 import SocialMedia from "./SocialMedia.astro";
-import Settings from "./Settings.astro"
 
 export interface Props {
     color: string;
+    mainPage:boolean;
 }
 
-const { color = "#00b65fa0" } = Astro.props;
+const { color = "#00b65fa0", mainPage } = Astro.props;
 
 ---
 
@@ -15,6 +16,8 @@ const { color = "#00b65fa0" } = Astro.props;
 
     <SocialMedia color={color}/>
 
-    <Nav color={color}/>
+    <Nav mainPage={mainPage}/>
+
+    <NavMobile />
 
 </header>
