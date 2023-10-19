@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 
 const posts = await Astro.glob("./blog/*.md");
 const postsSorted = posts.sort((post) => post.frontmatter.date);
-const postClass = ' post backdrop-blur-sm shadow-lg'
+const postClass = ' post backdrop-blur-xl shadow-lg'
 
 ---
 

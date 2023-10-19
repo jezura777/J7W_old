@@ -5,10 +5,13 @@ import SocialMediaMobile from "../components/SocialMediaMobile.astro";
 export interface Props {
     title: string;
     color: string;
+    transparentBg: boolean;
     mainPage: boolean;
 }
 
-const { title, color = "#00b65f", mainPage = false } = Astro.props;
+const { title, color = "#00b65f",transparentBg = false, mainPage = false } = Astro.props;
+
+const color_bg = ((!transparentBg)? color : "transparent");
 ---
 
 <!DOCTYPE html>
@@ -37,7 +40,7 @@ const { title, color = "#00b65f", mainPage = false } = Astro.props;
 </html>
 
 <!-- TODO:make it so on pc if it is the normal page nav is open all the time and on mobile make something like social media mobile but on top where on right there is the blog icon and on the lefy there is the projects icon and in the middle there is jezura777 logo that is link to main page -->
-<style define:vars={{ color }}>
+<style define:vars={{ color_bg }}>
 
     @media (min-width: 768px) {
         .background-gradients{
@@ -58,16 +61,16 @@ const { title, color = "#00b65f", mainPage = false } = Astro.props;
                 #1e293b 0.75rem
             ),
             linear-gradient(
-                var(--color) var(--line-weight),
+                var(--color_bg) var(--line-weight),
                 transparent var(--line-weight)
             ),
             linear-gradient(
                 90deg,
-                var(--color) var(--line-weight),
+                var(--color_bg) var(--line-weight),
                 transparent var(--line-weight)
             );
 
-            background-blend-mode: normal;
+        background-blend-mode: normal;
 
         background-size: var(--size) var(--size);
         background-position: calc(
@@ -79,6 +82,8 @@ const { title, color = "#00b65f", mainPage = false } = Astro.props;
                         var(--y-offset)
                 ),
             var(--x-offset) var(--y-offset), var(--x-offset) var(--y-offset);
+
+        background-attachment:fixed;
 
         
     }
