@@ -1,12 +1,11 @@
 ---
 layout: '../../layouts/Blog.astro'
-title: 'Básnička: 'Staré dobré časy'
+title: 'Básnička: Staré dobré časy'
 date: 2023-10-22
 lang: 'cs'
 author: 'Jezura777'
 poem: true
 ---
-<br/>
 Stýská se mi po tobě,<br/>
 po té překrásné době,<br/>
 kdy mluvit s tebou mi nedělalo potíže,<br/>
