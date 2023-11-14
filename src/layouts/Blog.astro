@@ -18,13 +18,13 @@ const { frontmatter } = Astro.props;
 		<div class="main backdrop-blur-sm">
 			<div class="">
 				<div class="" id={frontmatter.poem}>
-					<h1 class="">{frontmatter.title}</h1>
+					<h1 class="flex flex-col justify-center">{frontmatter.title}</h1>
 
-					<div class="flex flex-row justify-between text-[#00b65f]">
-						<p class="">{frontmatter.author}</p>
-						<p class="">{frontmatter.date.slice(0, 10)}</p>
+					<div class="flex flex-row w-full justify-between text-[#00b65f]">
+						<p class="w-min">{frontmatter.author}</p>
+						<p class="w-min">{frontmatter.date.slice(0, 10)}</p>
 					</div>
-					<div class="bg-[#00b65f] w-full h-[2px]"></div>
+					<div class="bg-[#00b65f] w-custom h-[2px]"></div>
 
 					<div class="mt-6">
 						<slot />
@@ -63,5 +63,12 @@ const { frontmatter } = Astro.props;
 		.main {
 			margin: 3.75rem 5rem 3.75rem 5rem;
 		}
+	}
+
+	.w-custom {
+		--offset: .5rem;
+
+		width: calc(100% + var(--offset));
+		transform: translateX(calc(var(--offset)/-2));
 	}
 </style>
