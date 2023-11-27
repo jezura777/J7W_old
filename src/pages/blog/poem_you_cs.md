@@ -1,8 +1,11 @@
 ---
-layout: ../../layouts/blog.astro
+layout: '../../layouts/Blog.astro'
+title: 'Básnička: Ty'
+date: 2023-11-27
+lang: 'cs'
+author: 'Jezura777'
+poem: true
 ---
-
-# Ty
 
 Můj život klesá na dno,
 Možná se už nikdy nevrátím,
