@@ -11,20 +11,20 @@ const { frontmatter } = Astro.props;
 	});
 </script>
 
-<Base title={frontmatter.title} color='#d97706'>
+<Base title={frontmatter.title} color='#ca8a04'>
 
 	<main class="">
 
-		<div class="main backdrop-blur-sm">
+		<div class="main backdrop-blur-md bg-slate-800 bg-opacity-50">
 			<div class="">
 				<div class="" id={frontmatter.poem}>
 					<h1 class="flex flex-col justify-center">{frontmatter.title}</h1>
 
-					<div class="flex flex-row w-full justify-between text-[#00b65f]">
+					<div class="flex flex-row w-full justify-between text-green">
 						<p class="w-min">{frontmatter.author}</p>
 						<p class="w-min">{frontmatter.date.slice(0, 10)}</p>
 					</div>
-					<div class="bg-[#00b65f] w-custom h-[2px]"></div>
+					<div class="bg-green-950 w-custom h-[2px]"></div>
 
 					<div class="mt-6">
 						<slot />
@@ -38,6 +38,9 @@ const { frontmatter } = Astro.props;
 </Base>
 
 <style>
+	:root {
+		--yellow-600: #ca8a04;
+	}
    	* {
 		display: block;
 		padding: 0;
@@ -47,8 +50,8 @@ const { frontmatter } = Astro.props;
 	.main {
 		margin: 6rem 0.2rem 6rem 0.2rem;
 		border-width: 2px;
-		border-color: #d97706;
-		color: #d97706;
+		border-color: var(--yellow-600);
+		color: var(--yellow-600);
 		border-radius: 1.5rem;
 		padding: 1.75rem;
 		transition: all 500ms ease-in-out;
