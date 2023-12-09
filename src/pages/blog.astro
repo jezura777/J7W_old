@@ -9,12 +9,12 @@ const postClass = ' post backdrop-blur-xl shadow-lg'
 
 
 
-<Base title="J7-Blog" color='#d97706'>
+<Base title="J7-Blog" color='#ca8a04'>
 
 	<main class="parent">
 		{postsSorted.map((post) => <a href={post.url} class={post.frontmatter.lang+postClass}>
 
-			<h1 class="text-[#d97706]">{post.frontmatter.title}</h1>
+			<h1 class="text-yellow-600">{post.frontmatter.title}</h1>
 		
 		</a>)}
 
@@ -22,6 +22,9 @@ const postClass = ' post backdrop-blur-xl shadow-lg'
 </Base>
 
 <style>
+	:root {
+		--yellow-600: #ca8a04;
+	}
    	* {
 		display: block;
 		padding: 0;
@@ -30,7 +33,7 @@ const postClass = ' post backdrop-blur-xl shadow-lg'
 
 	.post {
 		border-width: 2px;
-		border-color: #d97706;
+		border-color: var(--yellow-600);
 		border-radius: 1.5rem;
 		padding: 1.75rem;
 		margin: 0 0.2em 0 0.2rem;
@@ -38,10 +41,10 @@ const postClass = ' post backdrop-blur-xl shadow-lg'
 	}
 
 	.post:hover{
-		box-shadow: 0px 0px 0.1rem #d97706,
-				0px 0px 0.2rem #d97706,
-				0px 0px 0.4rem #d97706,
-				0px 0px 0.8rem #d97706;
+		box-shadow: 0px 0px 0.1rem var(--yellow-600),
+				0px 0px 0.2rem var(--yellow-600),
+				0px 0px 0.4rem var(--yellow-600),
+				0px 0px 0.8rem var(--yellow-600);
 	}
 
 	.parent {
