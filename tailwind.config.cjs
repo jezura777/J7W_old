@@ -6,7 +6,12 @@ module.exports = {
 		extend: {
 			colors: {
 			    green: {
-					950: '#007d54',
+					950: '#20a220',
+					960: '#0b6e4f',
+				},
+				slate: {
+					text: '#efefef',
+					800: '#000054'
 				}
 		    },
 	    },

@@ -5,16 +5,16 @@ export interface Props {
 
 const { text } = Astro.props;
 ---
-<div id="ddd" class="flex flex-col justify-center items-center bg-slate-900 w-80 md:w-96">
+<div id="ddd" class="flex flex-col justify-center items-center bg-[#000042] w-80 md:w-96">
     <img src="./logo.svg" alt="">
-    <h1 contenteditable id="text" class="text-xl text-slate-300 bg-clip-text bg-gradient-to-br from-green-950 via-green-700 to-green-600"><span class="text-green-950">404: </span> Not Found</h1>
+    <h1 contenteditable id="text" class="text-xl bg-clip-text bg-gradient-to-br from-green-950 to-green-960"><span class="text-green-950">404: </span> Not Found</h1>
 </div>
 
 <style>
 
     #ddd {
 
-        color: #fff;
+        color: #efefef;
         padding: 2em;
         transform: rotate 300ms ease-in-out;
         transform:
@@ -81,7 +81,7 @@ const { text } = Astro.props;
     document.addEventListener("click", () => {
         if (document.getElementById("text").textContent == "Jezura777") {
             document.getElementById("text").style.cssText = "color: transparent;";
-            // alert("You have sharp eyes!");
+            alert("You are smart!");
         } else {
             document.getElementById("text").style.cssText = "color: rgb(203 213 225);";
         }

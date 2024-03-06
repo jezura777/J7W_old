@@ -9,9 +9,9 @@ export interface Props {
     mainPage: boolean;
 }
 
-const { title, color = "#007d54",transparentBg = false, mainPage = false } = Astro.props;
+const { title, color = "#0b6e4f",transparentBg = false, mainPage = false } = Astro.props;
 
-const color_bg = ((!transparentBg)? color : "transparent");
+const color_bg = "#0b6e4f";
 ---
 
 <!DOCTYPE html>
@@ -67,7 +67,7 @@ const color_bg = ((!transparentBg)? color : "transparent");
         background-image: radial-gradient(
                 circle,
                 transparent 0.75rem,
-                #1e293b 0.75rem
+                #000054 0.75rem
             ),
             linear-gradient(
                 var(--color_bg) var(--line-weight),

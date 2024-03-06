@@ -1,10 +1,10 @@
 ---
 export interface Props {
     mainPage: boolean;
+    color: string;
 }
 
-const { mainPage } = Astro.props;
-
+const { mainPage, color } = Astro.props;
 ---
 
 <script>
@@ -39,9 +39,9 @@ const { mainPage } = Astro.props;
 </script>
 
 <div class="flex flex-row justify-center w-screen items-center absolute -z-10 pointer-events-none max-md:invisible">
-    <nav id="nav" class="flex flex-col border-green-950 border-solid  border-b-2 border-x-2  rounded-b-3xl md:-translate-y-[8.5em] -translate-y-[6em] hover:-translate-y-[6em] cursor-pointer transition duration-500 backdrop-blur-sm shadow-xl text-right text-2xl text-green-950 font-semibold gap-5 pt-5 pointer-events-auto">
+    <nav id="nav" class="flex flex-col custom-border border-solid border-b-2 border-x-2 rounded-b-3xl md:-translate-y-[8.32em] -translate-y-[6em] hover:-translate-y-[6em] cursor-pointer transition duration-500 backdrop-blur-sm shadow-xl text-right text-2xl text-green-960 font-semibold gap-5 pt-5 pointer-events-auto">
         <div class="flex flex-col">
-            <a id="home" href="/" class="transition-all duration-300 cursor-pointer pr-6 bg-clip-text text-transparent bg-gradient-to-br from-green-950 via-green-700 to-green-600 hover:drop-shadow-custom-green-950">Home <span class="bg-clip-text text-transparent bg-gradient-to-br"><i class="fa-solid fa-house fa-sm"></i></span></a>
+            <a id="home" href="/" class="transition-all duration-300 cursor-pointer pr-6 bg-clip-text hover:text-transparent bg-gradient-to-br from-green-950 to-green-960 hover:drop-shadow-custom-green-950">Home <span class="bg-clip-text text-transparent bg-gradient-to-br"><i class="fa-solid fa-house fa-sm"></i></span></a>
             <a id="about" href="/blog" class="transition-all duration-300 cursor-pointer pr-6 bg-clip-text hover:text-transparent bg-gradient-to-br from-amber-600 to-yellow-600 hover:drop-shadow-custom-amber-600">Blog <span class="bg-clip-text text-transparent bg-gradient-to-br from-amber-600 to-yellow-600"><i class="fa-solid fa-folder fa-sm translate-y-[.05em]"></i></span></a>
             <a id="projects" href="/projects" class="transition-all duration-300 cursor-pointer pr-6 bg-clip-text hover:text-transparent bg-gradient-to-br from-violet-600 to-fuchsia-600 hover:drop-shadow-custom-violet-600">Projects <span class="bg-clip-text text-transparent bg-gradient-to-br from-violet-600 to-fuchsia-600"><i class="fa-solid fa-rocket fa-sm translate-y-[.157em]"></i></span></a>
         </div>
@@ -52,7 +52,7 @@ const { mainPage } = Astro.props;
     </nav>
 </div>
 
-<style>
+<style define:vars={{ color }}>
     
     @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
   
@@ -87,6 +87,14 @@ const { mainPage } = Astro.props;
         z-index: -2;
     }
 
+    
+    .custom-border {
+        border-color: #08a045;
+    }
+
+    .custom-border:hover {
+        border-color: var(--color);
+    }
 
 
 

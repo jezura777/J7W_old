@@ -1,26 +1,123 @@
-<svg version="1.1" x="0" y="0" xml:space="preserve" id="prefix__prefix__prefix__svg24" width="512" height="512"
-   xmlns="http://www.w3.org/2000/svg">
-   <style type="text/css" id="style2">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg125"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Logo-Final-Light.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs119" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="196.25"
+     inkscape:cy="179.25"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:snap-grids="true"
+     units="mm"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid127"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="mm"
+       visible="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata122">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Vrstva 2">
+    <g
+       id="prefix__prefix__prefix__g11"
+       transform="matrix(0.26447537,0,0,0.26340031,28.348565,17.966741)" />
+    <g
+       id="g205"
+       transform="matrix(0.26493901,0,0,0.26378544,44.445362,45.472821)" />
+  </g>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="prefix__prefix__prefix__g21"
+       transform="matrix(0.2677713,0,0,0.26503286,-10.387599,-59.678936)">
+      <path
+         class="prefix__prefix__prefix__st0"
+         id="prefix__prefix__prefix__rect13"
+         d="M 112.89988,325.006 H 262.6125 v 34.94063 H 112.89988 Z"
+         style="fill:#20a220;fill-opacity:1;stroke-width:0.918985" />
+      <path
+         class="prefix__prefix__prefix__st0"
+         id="prefix__prefix__prefix__rect15"
+         d="M 236.41169,519.67526 V 325.00599 l 29.64283,10e-6 c 3.95238,0 4.94048,0.9983 4.94048,4.99152 v 189.67774 z"
+         style="fill:#20a220;fill-opacity:1;stroke-width:0.943547"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         class="prefix__prefix__prefix__st0"
+         id="prefix__prefix__prefix__rect19"
+         stroke-width="0.937672"
+         d="M 231.47122,559.60742 H 112.89989 l -1e-5,-29.94912 c 0,-3.99322 0.9881,-4.99152 4.94048,-4.99152 h 113.63086 z"
+         style="fill:#20a220;fill-opacity:1"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         class="prefix__prefix__prefix__st0"
+         id="prefix__prefix__prefix__rect19-9"
+         stroke-width="0.937672"
+         d="m 270.99504,519.67526 -39.4929,39.90096 c -40.51187,0.9983 -35.09393,-13.96206 -54.37611,0.0312 l 74.38627,-69.66164 19.5445,19.74644 c -2.99516,5.95862 -2.00707,4.96032 -0.0618,9.98304 z"
+         style="fill:#20a220;fill-opacity:1"
+         sodipodi:nodetypes="ccccccc" />
+    </g>
+    <path
+       id="prefix__prefix__prefix__rect9"
+       style="fill:#efefef;fill-opacity:1;stroke-width:0.239264"
+       d="m 30.438451,13.229162 v 9.260417 h 34.384464 c 1.058333,0 1.322916,0.264583 1.322916,1.322917 v 54.048378 h 9.271786 V 22.489579 13.229162 Z"
+       sodipodi:nodetypes="ccccccccc" />
+  </g>
+  <style
+     type="text/css"
+     id="style2">
       .prefix__prefix__prefix__st0 {
          /* fill: #00b65f */
          fill: #007d54
       }
    </style>
-   <g id="prefix__prefix__prefix__Layer_1" transform="matrix(.99825 0 0 .99854 -37.811 -153.587)">
-      <g id="prefix__prefix__prefix__g11">
-         <path class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect7"
-            d="M310.64 278.994h163v38h-163z" />
-         <path transform="rotate(-90)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect9"
-            d="M-561.006 435.633h236v38h-236z" />
-      </g>
-      <g id="prefix__prefix__prefix__g21">
-         <path class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect13" d="M108 278.994h163v38H108z" />
-         <path transform="rotate(-90)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect15"
-            d="M-524.006 232.995h199v38h-199z" />
-         <path transform="rotate(135)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect17"
-            stroke-width=".985" d="M178.454-561.989h53.08v37.429h-53.08z" />
-         <path transform="scale(-1)" class="prefix__prefix__prefix__st0" id="prefix__prefix__prefix__rect19"
-            stroke-width=".996" d="M-233.6-561.406h124v38h-124z" />
-      </g>
-   </g>
 </svg>
